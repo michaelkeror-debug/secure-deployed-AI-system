@@ -7,4 +7,4 @@ collecting ... collected 1 item
 
 test_encrypt_at_rest.py::test_ciphertext_not_plaintext PASSED            [100%]
 
-============================== 1 passed in 0.08s ===============================
+============================== 1 passed in 0.09s ===============================

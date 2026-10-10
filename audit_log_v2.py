@@ -44,7 +44,7 @@ def audit(actor: str, action: str, resource: str, outcome: str,
 
 
 if __name__ == '__main__':
-    LOG = Path('evidence/audit_sample.jsonl')          # sample goes to evidence/
+    LOG = Path('evidence/deliverable 3/audit_sample.jsonl')          # sample goes to evidence/
     LOG.parent.mkdir(parents=True, exist_ok=True)
     LOG.write_text('')
 

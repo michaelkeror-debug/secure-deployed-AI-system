@@ -1,0 +1,5 @@
+role            check_stock           plan_delivery_route   
+partner_clinic  ALLOW                 DENY                  
+clinical_ops    ALLOW                 ALLOW                 
+unknown         DENY                  DENY                  
+rbac OK

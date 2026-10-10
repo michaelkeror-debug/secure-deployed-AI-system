@@ -5,7 +5,7 @@
 This week we secured the deployed AfyaPlus AI path: the triage API (`triage_api_v1.py`) and the logistics MCP server (`logistics_mcp.py`). We added secrets handling, encryption at rest, role-based access, an audit trail and data-retention controls. Controls are aligned to the Kenya Data Protection Act as a teaching alignment, not a compliance claim. The manager brief is in `manager_brief.md`.
 
 ## Encryption
-- transit_ok / TLS evidence: 'transit_policy ok'
+- transit_ok  / TLS evidence: transit_policy.py, evidence/transit_ok.txt
 - gitignore / resolve_secrets: `.gitignore` covers `.env`, `secrets/` and `logs/`. `secrets_not_in_git.sh` and `check_gitignore.py` fail closed. `resolve_secrets.py` refuses to boot without `JWT_SECRET`. Evidence: `evidence/secrets_not_in_git.txt`, `evidence/secrets_ignored.txt`, `evidence/boot_missing_secret.txt`, `evidence/boot_with_secret.txt`.
 - Key Vault or KMS, or the fallback twin JSON: `secret_refs.yaml` points to Azure Key Vault by name. The runnable fallback is `kms_twin.json` with `encrypt_at_rest.py` (library-provided `cryptography.Fernet`, no custom cipher). Production mapping: `docs/key_management_map.json`. Notes: `AT_REST.md`. Evidence: `evidence/encrypt_test.txt`.
 
