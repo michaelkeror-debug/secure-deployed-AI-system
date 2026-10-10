@@ -1,4 +1,4 @@
-"""Fail closed if .env is tracked or a Compose file inlines a secret."""
+"""Fail to close if .env is tracked or a Compose file inlines a secret."""
 import re
 import subprocess
 import sys
