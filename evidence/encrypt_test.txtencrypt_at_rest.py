@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0 -- /Users/MAC/afyaplus-platform/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/MAC/afyaplus-platform/week-9/secure-deployed-AI-system
+plugins: langsmith-0.11.1, anyio-4.14.2
+collecting ... collected 1 item
+
+test_encrypt_at_rest.py::test_ciphertext_not_plaintext PASSED            [100%]
+
+============================== 1 passed in 0.08s ===============================

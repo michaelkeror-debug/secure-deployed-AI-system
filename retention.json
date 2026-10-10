@@ -1,0 +1,8 @@
+{
+  "triage_messages":   {"days": 90,   "notes": "hashed and redacted payloads"},
+  "audit_logs":        {"days": 90,   "notes": "actor, action, resource, outcome; no raw clinical text"},
+  "mcp_stock_queries": {"days": 30,   "notes": "tool, role, clinic id, item"},
+  "jwt_subjects":      {"days": 90,   "notes": "only as subject_hash inside audit_logs"},
+  "deletion_records":  {"days": null, "notes": "NEVER swept: proof of deletion, counts only"},
+  "knowledge_files":   {"days": null, "notes": "not personal data; pinned in git"}
+}

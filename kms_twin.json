@@ -1,0 +1,8 @@
+{
+  "kms": "local-twin-of-azure-key-vault",
+  "master_key": {"name": "local-fernet-key", "env": "LOCAL_FERNET_KEY"},
+  "algorithm": "cryptography.Fernet (library AES-128-CBC + HMAC-SHA256, no custom cipher)",
+  "protects": ["secrets/*.enc"],
+  "rotation_days": 90,
+  "production_target": "docs/key_management_map.json"
+}

@@ -1,0 +1,36 @@
+[
+  
+  {"name": "triage_messages",
+   "purpose": "advisory urgency bands",
+   "lawful_basis": "teaching: legitimate_interests_or_consent_review",
+   "retention_days": 90,
+   "special_category": true},
+  {
+    "name": "audit_logs",
+    "purpose": "records of authenticated users",
+    "lawful_basis": "legitimate_interests_security_audit",
+    "retention_days": 90,
+    "special_category": false
+  },
+  {
+    "name": "mcp_stock_queries",
+    "purpose": "clinic stock checks",
+    "lawful_basis": "legitimate_interests_service_review",
+    "retention_days": 30,
+    "special_category": false
+  },
+  {
+    "name": "knowledge_files",
+    "purpose": "pinned FAQ corpus",
+    "lawful_basis": "n/a_not_personal_data",
+    "retention_days": null,
+    "special_category": false
+  },
+  {
+    "name": "jwt_subjects",
+    "purpose": "identify the calling clinic on every request",
+    "lawful_basis": "legitimate_interest_security_access_control",
+    "retention_days": 90,
+    "special_category": false
+  }
+]
